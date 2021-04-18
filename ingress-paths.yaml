@@ -1,0 +1,25 @@
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-paths
+
+spec:
+  rules:
+  - host: www.api.sa.homework.net
+    http:
+      paths:
+      - path: "/kbtu1/assyl"
+        backend:
+          serviceName: webx
+          servicePort: 8000
+
+      - path: "/kbtu2/assyl"
+        backend:
+          serviceName: webx
+          servicePort: 8000
+
+      - path: "/kbtu3/assyl"
+        backend:
+          serviceName: webx
+          servicePort: 8000
